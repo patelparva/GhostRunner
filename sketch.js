@@ -30,7 +30,6 @@ function setup() {
   railingGroup = createGroup();
   invisibleRailingGrp = createGroup();
   
-  ghost.debug = true;
 }
 
 function draw() {
