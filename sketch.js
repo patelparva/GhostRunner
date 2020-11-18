@@ -40,7 +40,7 @@ function draw() {
   ghost.setCollider("rectangle",0,0,300,250);
   
   if(gameState===PLAY) {
-    // bgSound.loop();
+    bgSound.loop();
     
     bgSprite.velocityY = 1;
     // bgSprite.x = 
