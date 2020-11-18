@@ -68,7 +68,7 @@ function draw() {
       ghost.velocityY = 0;
     }
     
-    invisibleRailingGrp.visible = false;
+    invisibleRailingGrp.visibleEach = false;
     
     if(ghost.isTouching(invisibleRailingGrp) || ghost.y>600) {
       gameState=END;
