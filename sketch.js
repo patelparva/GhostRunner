@@ -39,6 +39,8 @@ function draw() {
   
   ghost.setCollider("rectangle",0,0,300,250);
   
+  invisibleRailingGrp.visibleEach = false;
+  
   if(gameState===PLAY) {
     bgSound.loop();
     
@@ -67,8 +69,6 @@ function draw() {
     if(ghost.isTouching(railingGroup)) {
       ghost.velocityY = 0;
     }
-    
-    invisibleRailingGrp.visibleEach = false;
     
     if(ghost.isTouching(invisibleRailingGrp) || ghost.y>600) {
       gameState=END;
